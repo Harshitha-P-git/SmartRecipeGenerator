@@ -55,7 +55,7 @@ This project highlights problem-solving ability, API integration, and production
 |--------------|-------------|
 | Working Application URL | [https://quiet-kheer-8c9382.netlify.app/](https://quiet-kheer-8c9382.netlify.app/) |
 | Backend API | [https://smartrecipegenerator-backend.onrender.com/](https://smartrecipegenerator-backend.onrender.com/) |
-| GitHub Repository | *(this repository)* |
+| GitHub Repository | (https://github.com/Harshitha-P-git/SmartRecipeGenerator.git/) |
 | Documentation & Write-Up | Included in this README |
 
 ---
