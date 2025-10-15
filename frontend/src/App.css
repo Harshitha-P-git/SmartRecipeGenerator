@@ -1,0 +1,204 @@
+/* ---------- GLOBAL STYLES ---------- */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #FFFBF5, #FFF5E9);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------- NAVBAR ---------- */
+.navbar {
+  width: 100%;
+  background-color: #ff7043;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+.generator-container {
+  background: #ffffff;
+  max-width: 650px;
+  width: 90%;
+  margin: 60px auto;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s;
+}
+.generator-container:hover {
+  transform: translateY(-2px);
+}
+
+/* ---------- TITLE ---------- */
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #e65100;
+  margin-bottom: 10px;
+}
+.subtitle {
+  font-size: 1.05rem;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+/* ---------- FORM ---------- */
+input, select {
+  width: 100%;
+  padding: 12px 14px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+input:focus, select:focus {
+  border-color: #ff7043;
+  box-shadow: 0 0 6px rgba(255, 112, 67, 0.4);
+  outline: none;
+}
+
+/* ---------- BUTTON ---------- */
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 12px;
+  background-color: #ff7043;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s;
+}
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  background-color: #e86a33;
+}
+button:disabled {
+  background-color: #ffa382;
+  cursor: not-allowed;
+}
+
+/* ---------- LOADING SPINNER ---------- */
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #ff7043;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ---------- RECIPE GRID ---------- */
+.recipes {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 25px;
+  padding: 0 20px;
+}
+.recipe-card {
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+.recipe-card:hover {
+  transform: scale(1.03);
+}
+.recipe-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+.recipe-body {
+  padding: 15px 18px 20px;
+}
+.recipe-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #e65100;
+  margin-bottom: 6px;
+}
+.recipe-details {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+.instructions {
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 8px;
+}
+
+/* ---------- HOW IT WORKS ---------- */
+.how-it-works {
+  text-align: center;
+  margin: 70px 0 40px 0;
+}
+.steps {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.step {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 220px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.step i {
+  font-size: 2rem;
+  color: #ff7043;
+  margin-bottom: 10px;
+}
+
+/* ---------- TESTIMONIAL ---------- */
+.testimonial {
+  background: #fff;
+  max-width: 700px;
+  margin: 50px auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  padding: 35px;
+  text-align: center;
+  font-style: italic;
+  color: #444;
+}
+.testimonial strong {
+  display: block;
+  margin-top: 10px;
+  color: #e65100;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  margin-top: 70px;
+  background-color: #e65100;
+  color: white;
+  width: 100%;
+  padding: 18px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
